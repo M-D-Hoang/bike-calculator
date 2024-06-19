@@ -1,0 +1,25 @@
+.graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 10px;
+    width: 50%;
+}
+.jxgbox{
+    border-radius: none;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.speedInfoContainer{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.speedInfo{
+    font-weight: 600;
+}

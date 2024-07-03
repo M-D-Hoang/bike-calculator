@@ -1,25 +1,22 @@
 import { Navbar } from "./components/Navbar/Navbar.js";
-import { TopSpeedGraph } from "./components/TopSpeedGraph/TopSpeedGraph.js";
-import { VariableForm } from "./components/VariableForm/VariableForm.js";
+import { Footer } from "./components/Footer/Footer.js";
 import './App.css';
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AccelerationCalculator } from './pages/AccelerationCalculator/AccelerationCalculator.js';
+import { DistanceCalculator } from "./pages/DistanceCalculator/DistanceCalculator.js";
 
 
 function App() {
-  const [variablesArray, setVariablesArray] = useState({});
-
-  function handleVariables(variablesArray) {
-    setVariablesArray(variablesArray);
-  }
-
   return (
     <div className="App">
-      <Navbar />
-      <div className="main-container">
-        <VariableForm submitVariables={handleVariables}/>
-        <TopSpeedGraph variablesArray={variablesArray} />
-
-      </div>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route index element={<AccelerationCalculator/>} />
+          <Route path="/time" element={<DistanceCalculator/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,9 +1,66 @@
-.navbar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #282c34;
+.navbarContainer {
     color: white;
-    padding: 10px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbarContainer h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Niagara Engraved', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.menuIcon {
+    cursor: pointer;
+    height: 30px;
+    color: white;
+}
+
+.menu {
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 0;
+    background-color: #1b1b1b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 32px;
+    transition: transform 0.3s;
+    transform: translate(0, 0);
+}
+
+.menuItem {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menuItem:hover {
+    background-color: #303030;
+}
+
+.menuOpen {
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate(0, 60px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }

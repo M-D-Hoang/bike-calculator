@@ -1,0 +1,28 @@
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100px;
+    gap: 30px;
+}
+
+.footer {
+    color: white;
+    background-color: #0f0f0f;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mainFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    color: rgb(151, 151, 151);
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}

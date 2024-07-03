@@ -1,0 +1,38 @@
+.graph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 40px;
+}
+.jxgbox{
+    border-radius: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 80vw;
+}
+
+.speedInfoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoContainer{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.speedInfo{
+    font-weight: 600;
+    margin-right: 0.5em;
+}
+
+svg{
+    width: 100%;
+}

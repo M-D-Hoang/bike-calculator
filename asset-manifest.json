@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/bike-calculator/static/css/main.85e1cb60.css",
-    "main.js": "/bike-calculator/static/js/main.84fd08ce.js",
+    "main.js": "/bike-calculator/static/js/main.1d6a92b5.js",
     "static/js/453.e01b4b22.chunk.js": "/bike-calculator/static/js/453.e01b4b22.chunk.js",
     "static/media/background1.jpg": "/bike-calculator/static/media/background1.60124b2df2aae8d88c35.jpg",
     "static/media/pexels-mkronh-bmb-1149766-2545615.jpg": "/bike-calculator/static/media/pexels-mkronh-bmb-1149766-2545615.80e0e1e1a1b75017e74c.jpg",
     "static/media/Hamburger_icon.png": "/bike-calculator/static/media/Hamburger_icon.3844b76b45d0c0e3488f.png",
     "index.html": "/bike-calculator/index.html",
     "main.85e1cb60.css.map": "/bike-calculator/static/css/main.85e1cb60.css.map",
-    "main.84fd08ce.js.map": "/bike-calculator/static/js/main.84fd08ce.js.map",
+    "main.1d6a92b5.js.map": "/bike-calculator/static/js/main.1d6a92b5.js.map",
     "453.e01b4b22.chunk.js.map": "/bike-calculator/static/js/453.e01b4b22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85e1cb60.css",
-    "static/js/main.84fd08ce.js"
+    "static/js/main.1d6a92b5.js"
   ]
 }

@@ -15,7 +15,7 @@ export function Footer() {
                 </div>
                 <ContactForm />
             </div>
-            <p className={styles.copyright}> &copy; 2024 MDH. All Rights Reserved.</p>
+            <p className={styles.copyright}> &copy; Minh Duc Hoang</p>
         </div>
     );
 }

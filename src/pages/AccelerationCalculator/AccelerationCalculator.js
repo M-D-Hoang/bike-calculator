@@ -47,7 +47,7 @@ export function AccelerationCalculator() {
                     <li>Tailwind is effectively subtracted from (or, if negative for headwind, added to) your actual speed to calculate the aerodynamic drag.</li>
                     <li>Drag increases linearly with air density, drag coefficient, and frontal area.</li>
                     <li>Drag increases with the square of speed (minus tailwind).</li>
-                    <li>Aero components and mostly body position will affect drag coefficient and frontal area.</li>
+                    <li>Aero components, but mostly body position will affect both the drag coefficient and frontal area.</li>
                     <li>With the default values, drag accounts for 50% of the resistive force at 15-20km/h, and 80% of the resistive force at 30-35km/h.</li>
                 </ul>
                 <h5>Friction:</h5>

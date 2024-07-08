@@ -47,7 +47,7 @@ export function DistanceCalculator() {
                     <li>Tailwind is effectively subtracted from (or, if negative for headwind, added to) your actual speed to calculate the aerodynamic drag.</li>
                     <li>Drag increases linearly with air density, drag coefficient, and frontal area.</li>
                     <li>Drag increases with the square of speed (minus tailwind).</li>
-                    <li>Aero components and mostly body position will affect drag coefficient and frontal area.</li>
+                    <li>Aero components, but mostly body position will affect both the drag coefficient and frontal area.</li>
                     <li>With the default values, drag accounts for 50% of the resistive force at 15-20km/h, and 80% of the resistive force at 30-35km/h.</li>
                 </ul>
                 <h5>Friction:</h5>
@@ -57,7 +57,7 @@ export function DistanceCalculator() {
                     <li>Drivetrain loss can be reduced significantly with proper adjustments and lubrication.</li>
                     <li>With the default values, friction accounts for 50% of the resistive force at 15-20km/h, and 20% of the resistive force at 30-35km/h.</li>
                 </ul>
-                <p>The graphs show the simulation over a maximum of 36000 seconds or the until the distance is completed with a time step of 0.01 second if distance is under 10km, 0.02 second if distance is above 10km, or 0.1 second if distance is above 50km.</p>
+                <p>The graphs show the simulation over a maximum of 36000 seconds or until the distance is completed, with a time step of 0.01 second if distance is under 10km, 0.02 second if distance is above 10km, or 0.1 second if distance is above 50km.</p>
             </div>
         </div>
     );

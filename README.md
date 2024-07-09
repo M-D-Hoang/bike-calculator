@@ -24,6 +24,7 @@
 * Calculate power savings.
 * Select power curves (riders typically initiallly accelerate with higher power).
 * Export data.
+* More mobile compatibility.
 
 [Live Site](https://m-d-hoang.github.io/bike-calculator/#/)
 

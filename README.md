@@ -19,7 +19,7 @@
 * Compare your setups.
 * Calculate top speeds and travel times.
 
-## Upcomming Features
+## Upcoming Features
 
 * Calculate power savings.
 * Select power curves (riders typically initiallly accelerate with higher power).

@@ -11,8 +11,6 @@ export function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-
-
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.navbar}>

@@ -21,13 +21,12 @@ export function DistanceGraph({ variablesArray }) {
         if (!variablesArray[0] || !variablesArray[1]) return [null, null, 0, 0];
 
         const [variables1, variables2] = variablesArray;
+
+        // If the distance is greater than 10km, calculate the time step based on the distance(0.01s per additional 10km)
         if (variables1.distance > 10000 || variables2.distance > 10000) {
             const maxDistance = Math.max(variables1.distance, variables2.distance);
             dt = Math.floor(maxDistance / 10000) * 0.01;
         }
-        // if (variables1.distance > 50000 || variables2.distance > 50000) {
-        //     dt = 0.1;
-        // }
 
         const result1 = accelerationToCoverDistance(
             variables1.power, variables1.systemWeight, variables1.airDensity, variables1.dragCoefficient, variables1.frontalArea, g,

@@ -22,11 +22,12 @@ export function DistanceGraph({ variablesArray }) {
 
         const [variables1, variables2] = variablesArray;
         if (variables1.distance > 10000 || variables2.distance > 10000) {
-            dt = 0.02;
+            const maxDistance = Math.max(variables1.distance, variables2.distance);
+            dt = Math.floor(maxDistance / 10000) * 0.01;
         }
-        if (variables1.distance > 50000 || variables2.distance > 50000) {
-            dt = 0.1;
-        }
+        // if (variables1.distance > 50000 || variables2.distance > 50000) {
+        //     dt = 0.1;
+        // }
 
         const result1 = accelerationToCoverDistance(
             variables1.power, variables1.systemWeight, variables1.airDensity, variables1.dragCoefficient, variables1.frontalArea, g,
@@ -84,8 +85,11 @@ export function DistanceGraph({ variablesArray }) {
 
         const time1 = result1.times[result1.times.length - 1];
         const time2 = result2.times[result2.times.length - 1];
-        const time1String = `${time1.toFixed(2)}s`;
-        const time2String = `${time2.toFixed(2)}s`;
+
+        var time1String;
+        var time2String;
+        time1 > 36000 ? time1String = '>36000.00s' : time1String = `${time1.toFixed(2)}s`;
+        time2 > 36000 ? time2String = '>36000s.00' : time2String = `${time2.toFixed(2)}s`;
 
         let time1FasterString = null;
         let time2FasterString = null;

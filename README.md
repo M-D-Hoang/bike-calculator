@@ -22,7 +22,7 @@
 ## Upcoming Features
 
 * Calculate power savings.
-* Select power curves (riders typically initiallly accelerate with higher power).
+* Select power curves (riders typically initially accelerate with higher power).
 * Export data.
 * More mobile compatibility.
 
